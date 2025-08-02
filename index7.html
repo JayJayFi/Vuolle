@@ -94,7 +94,7 @@
             const tontitLayer = L.geoJSON(tontitGeoJson, {
                 coordsToLatLng: coordsToLatLng,
                 pane: 'tontitPane',
-                style: {"color": "#2ce81e", "fillOpacity": 0.2, "weight": 2},
+                style: {"color": "#2ce81e", "fillOpacity": 0.1, "weight": 2},
                 onEachFeature: (f, l) => {
                     if (f.properties && f.properties.title && f.properties.text) {
                         l.bindPopup(`<b>${f.properties.title}</b><br>${f.properties.text}`);
@@ -214,4 +214,5 @@
     });
     </script>
 </body>
+
 </html>
